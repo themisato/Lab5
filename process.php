@@ -200,22 +200,34 @@ try {
         ]);
         $application_id = $pdo->lastInsertId();
         
-        // Генерируем логин и пароль для нового пользователя
-        $newLogin = generateLogin($formData['full_name']);
-        $newPassword = generatePassword();
-        $passwordHash = password_hash($newPassword, PASSWORD_DEFAULT);
+        // Генерируем логин и пароль
+        $login = strtolower(preg_replace('/[^a-zA-Z]/', '', $full_name));
+        $login = substr($login, 0, 8) . '_' . rand(100, 999);
+        $password = substr(str_shuffle('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%'), 0, 12);
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
         
-        // Сохраняем логин и хеш пароля в БД
-        $updateStmt = $pdo->prepare("UPDATE applications SET login = :login, password_hash = :hash, credentials_shown = 0 WHERE id = :id");
+        // Сохраняем логин и пароль
+        $updateStmt = $pdo->prepare("UPDATE applications SET login = :login, password_hash = :hash WHERE id = :id");
         $updateStmt->execute([
-            ':login' => $newLogin,
-            ':hash' => $passwordHash,
-            ':id' => $application_id
+            ':login' => $login,
+            ':hash' => $password_hash,
+            ':id' => $id
         ]);
         
-        $isNewUser = true;
-        $credentialsShown = 0;
+        echo "<h3 style='color:green'>✅ Логин и пароль сохранены!</h3>";
+        echo "🔑 Логин: <strong>$login</strong><br>";
+        echo "🔒 Пароль: <strong>$password</strong><br>";
+        
+    } else {
+        echo "<h3 style='color:red'>❌ ОШИБКА ВСТАВКИ</h3>";
+        print_r($stmt->errorInfo());
     }
+    
+} catch (PDOException $e) {
+    echo "<h3 style='color:red'>❌ ОШИБКА БД: " . $e->getMessage() . "</h3>";
+    echo "Код: " . $e->getCode() . "<br>";
+}
+?>
     
     // Сохраняем языки программирования
     $langStmt = $pdo->prepare("SELECT id FROM programming_languages WHERE name = :name");
