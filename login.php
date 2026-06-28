@@ -56,13 +56,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             box-shadow: 0 8px 20px rgba(240, 98, 146, 0.1);
         }
         .login-container h2 {
-            color: #d81b60;
+            color: #110d52;
             text-align: center;
             margin-bottom: 1.5rem;
         }
         .login-error {
             background: #ffebee;
-            color: #c62828;
+            color: #110d52;
             padding: 0.75rem;
             border-radius: 12px;
             margin-bottom: 1rem;
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .login-btn {
             width: 100%;
             padding: 0.75rem;
-            background: linear-gradient(135deg, #f06292, #d81b60);
+            background: linear-gradient(135deg, #f06292, #110d52);
             color: white;
             border: none;
             border-radius: 40px;
@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin-top: 1rem;
         }
         .register-link a {
-            color: #d81b60;
+            color: #110d52;
             text-decoration: none;
         }
         .register-link a:hover {

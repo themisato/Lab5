@@ -83,24 +83,24 @@ $allowed_languages = ['Pascal', 'C', 'C++', 'JavaScript', 'PHP', 'Python', 'Java
     <link rel="stylesheet" href="style.css">
     <style>
         .error-border {
-            border: 2px solid #f44336 !important;
-            background-color: #ffebee !important;
+            border: 2px solid #110d52 !important;
+            background-color: #c2b9f7 !important;
         }
         .field-error {
-            color: #f44336;
+            color: #110d52;
             font-size: 0.8rem;
             margin-top: 0.25rem;
             display: block;
         }
         .error-summary {
-            background-color: #ffebee;
-            border-left: 5px solid #f44336;
+            background-color: #c2b9f7;
+            border-left: 5px solid #110d52;
             padding: 1rem;
             margin-bottom: 1.5rem;
             border-radius: 12px;
         }
         .user-info {
-            background-color: #e8f5e9;
+            background-color: #c2b9f7;
             border-left: 5px solid #4caf50;
             padding: 1rem;
             border-radius: 12px;
@@ -111,7 +111,7 @@ $allowed_languages = ['Pascal', 'C', 'C++', 'JavaScript', 'PHP', 'Python', 'Java
             flex-wrap: wrap;
         }
         .user-info .logout-btn {
-            background: #f44336;
+            background: #110d52;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
@@ -119,11 +119,11 @@ $allowed_languages = ['Pascal', 'C', 'C++', 'JavaScript', 'PHP', 'Python', 'Java
             font-size: 0.9rem;
         }
         .user-info .logout-btn:hover {
-            background: #c62828;
+            background: #110d52;
         }
         .credentials-box {
             background: #fff3e0;
-            border: 2px dashed #ff9800;
+            border: 2px dashed #ff00f2;
             padding: 1rem;
             border-radius: 12px;
             margin-bottom: 1.5rem;
@@ -131,7 +131,7 @@ $allowed_languages = ['Pascal', 'C', 'C++', 'JavaScript', 'PHP', 'Python', 'Java
         }
         .credentials-box .login-cred {
             font-weight: bold;
-            color: #e65100;
+            color: #e6006b;
             font-size: 1.1rem;
         }
     </style>

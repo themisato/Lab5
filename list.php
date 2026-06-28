@@ -49,7 +49,7 @@ $applications = $stmt->fetchAll();
         }
         
         .applications-table th {
-            background: linear-gradient(135deg, #f8b0c0, #f48fb1);
+            background: linear-gradient(135deg, #f8b0c0, #9662f0);
             color: white;
             font-weight: 600;
             position: sticky;
@@ -67,7 +67,7 @@ $applications = $stmt->fetchAll();
         
         .badge {
             display: inline-block;
-            background-color: #f06292;
+            background-color: #9662f0;
             color: white;
             padding: 0.2rem 0.6rem;
             border-radius: 20px;
@@ -90,7 +90,7 @@ $applications = $stmt->fetchAll();
         .empty-state {
             text-align: center;
             padding: 3rem;
-            color: #9b4b6e;
+            color: #9662f0;
             background-color: #fff0f3;
             border-radius: 20px;
         }
@@ -111,7 +111,7 @@ $applications = $stmt->fetchAll();
         }
         
         .btn-view {
-            background-color: #f06292;
+            background-color: #9662f0;
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
@@ -122,23 +122,23 @@ $applications = $stmt->fetchAll();
         }
         
         .btn-view:hover {
-            background-color: #d81b60;
+            background-color: #110d52;
         }
         
         .btn-delete {
             background-color: #ffebee;
-            color: #f44336;
+            color: #110d52;
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
             text-decoration: none;
             font-size: 0.75rem;
-            border: 1px solid #f44336;
+            border: 1px solid #110d52;
             transition: all 0.2s;
             white-space: nowrap;
         }
         
         .btn-delete:hover {
-            background-color: #f44336;
+            background-color: #110d52;
             color: white;
         }
         
@@ -158,7 +158,7 @@ $applications = $stmt->fetchAll();
         }
         
         .action-btn {
-            background: linear-gradient(135deg, #f06292, #d81b60);
+            background: linear-gradient(135deg, #f06292, #110d52);
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 40px;
@@ -207,15 +207,15 @@ $applications = $stmt->fetchAll();
             top: 1rem;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #9b4b6e;
+            color: #874b9b;
         }
         
         .modal-close:hover {
-            color: #d81b60;
+            color: #110d52;
         }
         
         .modal h3 {
-            color: #d81b60;
+            color: #110d52;
             margin-bottom: 1rem;
         }
         
@@ -224,7 +224,7 @@ $applications = $stmt->fetchAll();
         }
         
         .modal-field strong {
-            color: #d81b60;
+            color: #110d52;
             display: inline-block;
             width: 120px;
         }
@@ -247,11 +247,11 @@ $applications = $stmt->fetchAll();
         
         /* Цветовая индикация пола */
         .gender-male {
-            color: #2196f3;
+            color: #2b3cf0;
             font-weight: bold;
         }
         .gender-female {
-            color: #e91e63;
+            color: #d55a83;
             font-weight: bold;
         }
         

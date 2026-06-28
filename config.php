@@ -1,9 +1,9 @@
 <?php
 // config.php - Конфигурация подключения к базе данных
 $host = 'localhost';
-$dbname = 'u82461';
-$username = 'u82461';
-$password = '3874492';
+$dbname = 'u82686';
+$username = 'u82686';
+$password = '8078259';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

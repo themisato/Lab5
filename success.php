@@ -25,7 +25,7 @@ foreach (['full_name', 'phone', 'email', 'birth_date', 'gender', 'languages', 'b
         }
         .success-message .id {
             font-size: 1.2rem;
-            color: #d81b60;
+            color: #110d52;
             font-weight: bold;
         }
     </style>
