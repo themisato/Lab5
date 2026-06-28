@@ -189,7 +189,7 @@ $allowed_languages = ['Pascal', 'C', 'C++', 'JavaScript', 'PHP', 'Python', 'Java
         <?php endif; ?>
 
         <!-- Форма -->
-        <form action="process_debug.php" method="GET" class="application-form">
+        <form action="process.php" method="GET" class="application-form">
             <input type="hidden" name="edit_id" value="<?php echo isset($_SESSION['user_id']) ? $_SESSION['user_id'] : ''; ?>">
 
             <!-- 1. ФИО -->
